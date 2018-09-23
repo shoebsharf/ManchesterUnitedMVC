@@ -21,10 +21,10 @@ public class UserController {
     public ModelAndView getJersey(HttpServletRequest request) {
         ModelAndView view = new ModelAndView();
         view.setViewName("tshirt");
-        ResponseEntity<Jersey[]> responseEntity = restTemplate.getForEntity("http://localhost:8092/jersey", Jersey[].class);
+        ResponseEntity<Jersey[]> responseEntity = restTemplate.getForEntity("http://localhost:8091/jersey", Jersey[].class);
         System.out.println("before response tshirt method");
         Jersey[] jersey = (responseEntity.getBody());
-        System.out.println("lenght of the table rows " + jersey.length);
+        System.out.println("length of the table rows " + jersey.length);
         request.setAttribute("jersey", Arrays.asList(jersey));
 
         System.out.println("after tshirt");
@@ -40,7 +40,7 @@ public class UserController {
     @RequestMapping(value = "/orderSave", method = RequestMethod.POST)
     public String createOrder(@ModelAttribute Order o) {
         System.out.println("before order");
-        restTemplate.postForEntity("http://localhost:8092/orders",o, Order.class);
+        restTemplate.postForEntity("http://localhost:8091/orders",o, Order.class);
         System.out.println("after order");
         return "homepage";
     }
@@ -70,14 +70,14 @@ public class UserController {
     @RequestMapping(value = "/udelor", method = RequestMethod.DELETE)
     public String deleteOrder(@ModelAttribute Order o ){
         System.out.println("before delor");
-        restTemplate.delete("http://localhost:8092/cell",o, Order.class);
+        restTemplate.delete("http://localhost:8091/cell",o, Order.class);
         System.out.println("after delor");
         return "homepage";
     }
     @RequestMapping(value = "/uuporder", method = RequestMethod.PUT)
     public String updateJersey(@ModelAttribute Order o) {
         System.out.println("before updateJersey");
-        restTemplate.put("http://localhost:8092/jersey",o, Order.class);
+        restTemplate.put("http://localhost:8091/jersey",o, Order.class);
         System.out.println("after updateJersey");
         return "homepage";
     }

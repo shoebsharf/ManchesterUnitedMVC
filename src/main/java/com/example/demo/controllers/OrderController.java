@@ -20,7 +20,7 @@ public class OrderController {
     public ModelAndView getOrders(HttpServletRequest request) {
         ModelAndView view = new ModelAndView();
         view.setViewName("orders");
-        ResponseEntity<Order[]> responseEntity =restTemplate.getForEntity("http://localhost:8092/orders", Order[].class);
+        ResponseEntity<Order[]> responseEntity =restTemplate.getForEntity("http://localhost:8091/orders", Order[].class);
         System.out.println("before response order method");
         Order[] o = (responseEntity.getBody());
         System.out.println("lenght of the table rows " + o.length);
@@ -45,7 +45,7 @@ public class OrderController {
     public String deleteOrder(HttpServletRequest request){
         System.out.println("before delor");
 
-       restTemplate.getForEntity("http://localhost:8092//ordersid?=", Order.class);
+       restTemplate.getForEntity("http://localhost:8091/ordersid?=", Order.class);
         System.out.println("before response order method");
         return "orders";
     }
@@ -57,7 +57,7 @@ public class OrderController {
     @RequestMapping(value = "/uporder", method = RequestMethod.PUT)
     public String updateCell(@ModelAttribute Order o) {
         System.out.println("before updateCell");
-        restTemplate.put("http://localhost:8092/cell",o, Order.class);
+        restTemplate.put("http://localhost:8091/cell",o, Order.class);
         System.out.println("after updateCell");
         return "adminhome";
     }

@@ -20,7 +20,7 @@ public class AdminController {
     public ModelAndView getAdmins(HttpServletRequest request) {
         ModelAndView view = new ModelAndView();
         view.setViewName("adminlist");
-        ResponseEntity<AdminLogin[]> responseEntity = restTemplate.getForEntity("http://localhost:8092/login", AdminLogin[].class);
+        ResponseEntity<AdminLogin[]> responseEntity = restTemplate.getForEntity("http://localhost:8091/login", AdminLogin[].class);
         System.out.println("before response adminlogin method");
         AdminLogin[] logins = (responseEntity.getBody());
         System.out.println("lenght of the table rows " + logins.length);
@@ -32,7 +32,7 @@ public class AdminController {
     @RequestMapping(value = "/loginprocess", method = RequestMethod.GET)
     public ModelAndView login(@ModelAttribute AdminLogin adminLogin, HttpServletRequest request) {
         System.out.println("user "+adminLogin.getUserName()+" "+adminLogin.getPassword());
-        ResponseEntity<AdminLogin[]> responseEntity = restTemplate.getForEntity("http://localhost:8092/login", AdminLogin[].class);
+        ResponseEntity<AdminLogin[]> responseEntity = restTemplate.getForEntity("http://localhost:8091/login", AdminLogin[].class);
         AdminLogin[] login1 = (responseEntity.getBody());
         request.setAttribute("a", Arrays.asList(login1));
 

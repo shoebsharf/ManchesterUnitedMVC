@@ -20,10 +20,10 @@ public class JerseyController {
     public ModelAndView getJersey(HttpServletRequest request) {
         ModelAndView view = new ModelAndView();
         view.setViewName("jerseys");
-        ResponseEntity<Jersey[]> responseEntity = restTemplate.getForEntity("http://localhost:8092/cell", Jersey[].class);
+        ResponseEntity<Jersey[]> responseEntity = restTemplate.getForEntity("http://localhost:8091/jersey", Jersey[].class);
         System.out.println("before response of jersey method");
         Jersey[] jersey = (responseEntity.getBody());
-        System.out.println("lenght of the table rows " + jersey.length);
+        System.out.println("length of the table rows " + jersey.length);
         request.setAttribute("jersey", Arrays.asList(jersey));
 
 
@@ -50,7 +50,7 @@ public class JerseyController {
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String createJersey(@ModelAttribute Jersey jersey) {
         System.out.println("before hello");
-restTemplate.postForEntity("http://localhost:8092/jersey",jersey, Jersey.class);
+restTemplate.postForEntity("http://localhost:8091/jersey",jersey, Jersey.class);
         System.out.println("after hello");
         return "jerseys";
     }
@@ -58,14 +58,14 @@ restTemplate.postForEntity("http://localhost:8092/jersey",jersey, Jersey.class);
     public String deleteJersey(@ModelAttribute Jersey jersey) {
         System.out.println("before del");
 
-        restTemplate.delete("http://localhost:8092/jersey",jersey, Jersey.class);
+        restTemplate.delete("http://localhost:8091/jersey",jersey, Jersey.class);
         System.out.println("after del");
         return "hello";
     }
     @RequestMapping(value = "/update", method = RequestMethod.PUT)
     public String updateJersey(@ModelAttribute Jersey jersey ) {
         System.out.println("before updateJersey");
-        restTemplate.put("http://localhost:8092/jersey",jersey, Jersey.class);
+        restTemplate.put("http://localhost:8091/jersey",jersey, Jersey.class);
         System.out.println("after updateJersey");
         return "hello";
     }
