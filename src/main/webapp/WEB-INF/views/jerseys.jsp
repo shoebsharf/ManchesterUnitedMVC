@@ -17,6 +17,10 @@
             background-color: #5f5f5f;
             color: #ffffff;
         }
+        body{
+            background-image: url("http://khayam-hotels.com/wp-content/uploads/2018/06/manchester-united-hd-wallpapers-1080p-2017-manchester-united-champion-wallpaper-hd-manchester-united-champions-wallpaper.jpg");
+            background-position: center;
+        }
 
     </style>
 

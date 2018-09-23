@@ -16,7 +16,7 @@
             position:relative;
             z-index:2;
             font-size:17px;
-            background-color:#5f5f5f;
+            background-color: white;
             color:#ffffff;
             width:100%;
             padding:0;
@@ -27,7 +27,7 @@
             padding:10px 15px 9px 15px !important;
         }
         .topnav .bar a:hover,.topnav .bar a:focus{
-            background-color:#000000 !important;
+            background-color:white;
             color:#ffffff !important;
         }
         .topnav .bar a.active {
@@ -101,6 +101,10 @@
         .table{
             color: #4CAF50;
             background-color: aquamarine;
+        }
+        body{
+            background-image: url("https://hdqwalls.com/download/football-soccer-fire-ball-4k-f4-2048x2048.jpg");
+            background-position: center;
         }
 
 

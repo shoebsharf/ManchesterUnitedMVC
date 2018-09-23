@@ -11,6 +11,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-image: url("http://i.imgur.com/CxoArC1.jpg");
+            background-position: center;
+        }
+    </style>
   </head>
 
 <body>
@@ -25,15 +31,7 @@
         <li class="nav-item">
             <a class="nav-link" href='/logout' title='login'>Login Out</a>
         </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop2" data-toggle="dropdown">
-                Admin Add   </a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="/adminlogin">Admin List</a>
-                <a class="dropdown-item" href="/addadmin">Add Admin</a>
-                <a class="dropdown-item" href="/deleteadmin">Delete Admin</a>
 
-            </div>
         </li>
         <!-- Dropdown -->
         <li class="nav-item dropdown">
@@ -60,10 +58,6 @@
 </nav>
 
 
-<h1>Admin Page!</h1>
 
-    <p>Welcome to Admin page. <br>
-        Here you can add, delete and update items <b>Products</b>. <br> You can delete <b>Orders</b>. <br> You can add, delete and update <b>Admins</b>...... </p>
-</body>
 </html>
 

@@ -20,6 +20,10 @@
             font-family:"Segoe UI",Arial,sans-serif;
             font-size:16px;
         }
+        body{
+            background-image: url("https://i.pinimg.com/originals/73/87/e7/7387e79181ace38ed0968ae3e70e90aa.jpg");
+            background-position: center;
+        }
 
 
     </style>

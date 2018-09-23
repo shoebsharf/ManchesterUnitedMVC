@@ -13,7 +13,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-
+<style>
+    body{
+        background-image: url("https://hdqwalls.com/wallpapers/football-goal.jpg");
+        background-position: center;
+    }
+</style>
 </head>
 <body>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">

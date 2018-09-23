@@ -29,6 +29,10 @@
             width: 55%;
             height: 45%;
         }
+        body{
+            /*background-image: url("");*/
+            background-position: center;
+        }
     </style>
 
 </head>
@@ -71,7 +75,7 @@
 <form>
     <c:forEach var="jersey" items="${jersey}">
 
-        <div class="gallery"><a href="/addOrder"> <img src="smiley.gif" alt="Product" width="600" height="400"></a>
+        <div class="gallery"><a href="/addOrder"> <img src="thumb.jpg" alt="Product" width="600" height="400"></a>
             <a href="/addOrder">${jersey.pname}</a><br>
            <b>Product ID: </b>${jersey.id} <br>
      <b> Product Name: </b>${jersey.pname} <br>

@@ -23,6 +23,10 @@
             font-family:"Segoe UI",Arial,sans-serif;
             font-size:16px;
         }
+        body{
+            background-image: url("https://www.desktopbackground.org/p/2010/10/14/95115_wayne-rooney-manchester-united-hd-wallpapers_2560x1600_h.jpg");
+            background-position: center;
+        }
 
     </style>
 

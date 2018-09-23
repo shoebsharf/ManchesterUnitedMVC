@@ -19,10 +19,11 @@
         width: 50%;
         height:35%;
         padding: 50px;
-        color:black;
+        color:white;
         font-family:"Segoe UI",Arial,sans-serif;
         font-size:16px;
     }
+    body{background-image: url("https://i.ytimg.com/vi/3HromwCQeuo/maxresdefault.jpg");background-position: center;}
 </style>
 
 </head>

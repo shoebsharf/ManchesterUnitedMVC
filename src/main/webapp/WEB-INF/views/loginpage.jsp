@@ -12,7 +12,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <style>
-
+body{
+    background-image: url("https://wallpapercave.com/wp/wc1741142.jpg");
+    background-position: center;
+}
     </style>
 
 </head>
@@ -31,15 +34,14 @@
 </nav>
 <br>
 <div class="container">
-    <h1 style="text-align: center">Login</h1>
+
     <form action="/loginprocess" method="get" class="center">
         <div class="form-group">
-            <label for="us">User Name:</label>
-            <input type="text" class="form-control" id="us" placeholder="Enter User Name" name="userName">
+            <input type="text" class="form-control" id="us" placeholder="Enter User Name" name="userName" required>
         </div>
         <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
         </div><br>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

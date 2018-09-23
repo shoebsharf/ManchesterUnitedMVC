@@ -99,6 +99,10 @@
            font-family:"Segoe UI",Arial,sans-serif;
            font-size:16px;
        }
+       body{
+           background-image: url("https://i.pinimg.com/originals/3a/55/4a/3a554ada28ead0a055b55823a3a80c95.jpg");
+           background-position: center;
+       }
 
    </style>
 </head>

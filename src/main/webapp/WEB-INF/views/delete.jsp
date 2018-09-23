@@ -11,6 +11,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <style>
+        body{background-image: url("https://www.thenational.ae/image/policy:1.181037:1499303648/image/jpeg.jpg?$p=79ddad7&w=1136&$w=ec52ab9");
+        background-position: center;}
+    </style>
 
 </head>
 
